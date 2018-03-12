@@ -1,0 +1,35 @@
+{
+    "name": "edersoares/eloquent-uuid",
+    "description": "A simple package to use universally unique identifiers (UUID) in Eloquent models.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eder Soares",
+            "email": "edersoares@me.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "laravel", "eloquent", "uuid"
+    ],
+    "require": {
+        "php": "~7.0",
+        "illuminate/database": "~5.5",
+        "illuminate/support": "~5.5",
+        "ramsey/uuid": "~3.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nix\\Eloquent\\Uuid\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nix\\Eloquent\\Uuid\\Tests\\": "tests/"
+        }
+    }
+}
