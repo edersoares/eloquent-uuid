@@ -1,6 +1,8 @@
 # Eloquent UUID
 
-A simple package to use universally unique identifiers (UUID) in Eloquent models.
+A simple package to use universally unique identifiers (UUID) as primary key of the Eloquent models.
+
+This package uses [Uuid](https://github.com/ramsey/uuid) library utilized in [Laravel](https://laravel.com) Framework to generate UUIDs.
 
 ## Installation
 
@@ -10,7 +12,7 @@ composer require edersoares/eloquent-uuid
 
 ## Usage
 
-Replace in migrations files:
+- Replace in migrations files:
 
 ```php
 // From
@@ -21,7 +23,7 @@ $table->uuid('uuid')->unique();
 $table->primary('uuid')
 ```
 
-After, use in your model the `Nix\Eloquent\Uuid\Uuid` trait:
+- After, use in your model the `Nix\Eloquent\Uuid\Uuid` trait:
 
 ```php
 use Illuminate\Database\Eloquent\Model;
@@ -35,11 +37,11 @@ class SomeModel extends Model
 
 ## Credits
 
-This package use:
+This package uses:
 
-- https://github.com/ramsey/uuid
+- [https://github.com/ramsey/uuid](https://github.com/ramsey/uuid)
 
 And is based on:
 
-- https://github.com/webpatser/laravel-uuid
-- https://github.com/EmadAdly/laravel-uuid
+- [https://github.com/webpatser/laravel-uuid](https://github.com/webpatser/laravel-uuid)
+- [https://github.com/EmadAdly/laravel-uuid](https://github.com/EmadAdly/laravel-uuid)
